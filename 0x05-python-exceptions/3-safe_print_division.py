@@ -4,7 +4,7 @@ def safe_print_division(a, b):
     """divides 2 integers and prints"""
     try:
         i = a / b
-    except(ZeroDivisionError, TypeError):
+    except (ZeroDivisionError, TypeError):
         i = None
     finally:
         print("Inside result: {}".format(i))
